@@ -10,5 +10,8 @@
     <string name="count_text">%1$s</string>
     <string name="pokeName">%1$s</string>
     <string name="result">結果</string>
-    <string name="score">%d / 10</string>
+    <string name="questionNum">Q.%1$d</string>
+    <string name="score">%1$d / 10</string>
+    <string name="answer">%1$s</string>
+    <string name="returnTxt">世代選択に戻る</string>
 </resources>

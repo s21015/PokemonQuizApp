@@ -1,6 +1,8 @@
 package jp.ac.it_college.std.s21015.pokemonquizapp
 
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.PorterDuff
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,6 +13,7 @@ import androidx.annotation.UiThread
 import androidx.annotation.WorkerThread
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
@@ -26,7 +29,6 @@ import java.util.*
 class QuizScreen : Fragment() {
     private val baseUrl = "https://pokeapi.co/"
     private val iconUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/%s.png"
-
 
     private var _binding: FragmentQuizScreenBinding? = null
     private val binding get() = _binding!!
@@ -72,8 +74,7 @@ class QuizScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentQuizScreenBinding.inflate(inflater, container, false)
-
-//        binding.pokemonIcon.setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_ATOP)
+        binding.pokemonIcon.setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_ATOP)
 
         showNextQuiz()
 
@@ -81,6 +82,8 @@ class QuizScreen : Fragment() {
     }
 
     private fun showNextQuiz() {
+
+        binding.questionNum.text = getString(R.string.questionNum, quizCount)
 
         val id = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].id
         val name = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].name
@@ -105,10 +108,10 @@ class QuizScreen : Fragment() {
 
         quiz.shuffle()
 
-        binding.ansBtn.text = quiz[0]
-        binding.ansBtn2.text = quiz[1]
-        binding.ansBtn3.text = quiz[2]
-        binding.ansBtn4.text = quiz[3]
+        binding.ansBtn.text = getString(R.string.answer, quiz[0])
+        binding.ansBtn2.text = getString(R.string.answer, quiz[1])
+        binding.ansBtn3.text = getString(R.string.answer, quiz[2])
+        binding.ansBtn4.text = getString(R.string.answer, quiz[3])
 
 
         binding.ansBtn.setOnClickListener {
@@ -123,6 +126,8 @@ class QuizScreen : Fragment() {
         binding.ansBtn4.setOnClickListener {
             checkAnswer(binding.ansBtn4)
         }
+
+
 
     }
 
@@ -150,9 +155,13 @@ class QuizScreen : Fragment() {
 
     private fun checkQuizCount() {
         if (quizCount == QUIZ_COUNT) {
-//            val intent = Intent(this@QuizScreen, ResultScreen::class.java)
-//            intent.putExtra("RIGHT_ANSWER_COUNT", rightAnswerCount)
-//            startActivity(intent)
+            view?.let {
+                Navigation.findNavController(it).navigate(
+                    QuizScreenDirections.actionQuizScreenToResultScreen().apply {
+                        score = rightAnswerCount
+                    }
+                )
+            }
         } else {
             quizCount++
             showNextQuiz()

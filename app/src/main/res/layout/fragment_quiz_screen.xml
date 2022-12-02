@@ -11,19 +11,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4"
-        tools:ignore="UsingOnClickInXml"
-        />
+        app:layout_constraintGuide_percent="0.6"
+        tools:ignore="UsingOnClickInXml" />
 
     <ImageView
         android:id="@+id/pokemonIcon"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionNum"
         tools:src="@tools:sample/avatars" />
 
     <Button
@@ -33,7 +31,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/white"
         android:onClick="checkAnswer"
-        android:text="Button"
+        android:text="@string/answer"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/ansBtn2"
         app:layout_constraintHorizontal_bias="0.5"
@@ -47,7 +45,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/white"
         android:onClick="checkAnswer"
-        android:text="Button"
+        android:text="@string/answer"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -61,7 +59,7 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/white"
         android:onClick="checkAnswer"
-        android:text="Button"
+        android:text="@string/answer"
         android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/ansBtn4"
         app:layout_constraintHorizontal_bias="0.5"
@@ -75,10 +73,22 @@
         android:layout_marginTop="32dp"
         android:backgroundTint="@color/white"
         android:onClick="checkAnswer"
-        android:text="Button"
+        android:text="@string/answer"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ansBtn3"
         app:layout_constraintTop_toBottomOf="@+id/ansBtn2" />
+
+    <TextView
+        android:id="@+id/questionNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/questionNum"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

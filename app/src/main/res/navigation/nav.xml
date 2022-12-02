@@ -45,5 +45,14 @@
         android:id="@+id/resultScreen"
         android:name="jp.ac.it_college.std.s21015.pokemonquizapp.ResultScreen"
         android:label="fragment_result_screen"
-        tools:layout="@layout/fragment_result_screen" />
+        tools:layout="@layout/fragment_result_screen" >
+        <argument
+            android:name="score"
+            app:argType="integer"
+            android:defaultValue="0"
+            />
+        <action
+            android:id="@+id/action_resultScreen_to_generationScreen"
+            app:destination="@id/generationScreen" />
+    </fragment>
 </navigation>
