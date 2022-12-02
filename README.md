@@ -1,10 +1,10 @@
 # PokemonQuizApp
+## タイトル画面
+![Screenshot_20221203-011412_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205337285-737ed687-88b9-465b-afcf-0e0cc853325b.jpg)
 ## 世代選択画面
-![Screenshot_20221202-225119_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205311036-34cd878b-5d06-49dc-901b-1150ce60fb04.jpg)
-
+![Screenshot_20221203-011417_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205337448-e2f46dde-be12-45a3-9af5-c1ce8b487b02.jpg)
 ## 問題画面
-![Screenshot_20221202-225309_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205310667-13c462fd-ff73-4001-8ddb-aebbff1538be.jpg)
-![Screenshot_20221202-225313_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205310905-8be4cf4c-4354-4557-b7c0-45e99808cb3a.jpg)
-
+![Screenshot_20221203-011422_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205337557-19805e84-3e78-4cf7-b39a-14afd71cf95f.jpg)
+![Screenshot_20221203-011427_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205337726-6229d79f-8173-4c42-a8be-e319eefbf0d3.jpg)
 ## 結果画面
-![Screenshot_20221202-225324_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205311109-d06e94c7-4655-4693-9cbf-62d9393368f4.jpg)
+![Screenshot_20221203-011452_PokemonQuizApp](https://user-images.githubusercontent.com/83270022/205337805-f79bfa0c-d5fb-4479-bbce-a65f98b652f1.jpg)
