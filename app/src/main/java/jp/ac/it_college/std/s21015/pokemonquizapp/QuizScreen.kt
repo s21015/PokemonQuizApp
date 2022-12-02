@@ -75,6 +75,7 @@ class QuizScreen : Fragment() {
     ): View {
         _binding = FragmentQuizScreenBinding.inflate(inflater, container, false)
         binding.pokemonIcon.setColorFilter(Color.BLACK, PorterDuff.Mode.SRC_ATOP)
+        binding.pokemonIcon.bringToFront()
 
         showNextQuiz()
 
@@ -89,13 +90,9 @@ class QuizScreen : Fragment() {
         val name = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].name
         val name2 = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].name
         val name3 = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].name
-//        val id = pokemon[pokedex[0].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].id
-//        val name = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id].name
-//        val name2 = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id].name
-//        val name3 = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id].name
 
         val quizData = mutableListOf(
-            mutableListOf(id.toString(), pokemon[id-1].name, name, name2, name3)
+            mutableListOf(id.toString(), pokemon[id-2].name, name, name2, name3)
         )
 
         val quiz = quizData[0]

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#212A58"
     tools:context=".GenerationScreen">
 
     <ScrollView
@@ -26,9 +27,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/kantoBtn"
@@ -37,9 +40,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/zyoutoBtn"
@@ -48,9 +53,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black"/>
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/houenBtn"
@@ -58,9 +65,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/sinouBtn"
@@ -69,9 +78,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/issyuBtn"
@@ -80,9 +91,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/sentratuBtn"
@@ -91,9 +104,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/kosutoBtn"
@@ -102,9 +117,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/mauntenBtn"
@@ -113,9 +130,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black"/>
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/aroraBtn"
@@ -124,9 +143,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black"/>
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/gararuBtn"
@@ -135,9 +156,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/yoroiBtn"
@@ -146,9 +169,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/kanmuriBtn"
@@ -157,9 +182,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black" />
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp"/>
 
             <Button
                 android:id="@+id/hisuiBtn"
@@ -168,9 +195,11 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#212A58"
                 android:text="Button"
-                android:textColor="@color/black"/>
+                android:textColor="#256566"
+                app:strokeColor="#256566"
+                app:strokeWidth="3dp" />
 
         </LinearLayout>
     </ScrollView>

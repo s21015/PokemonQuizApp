@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#212A58"
     tools:context=".QuizScreen">
 
     <androidx.constraintlayout.widget.Guideline
@@ -17,7 +18,7 @@
     <ImageView
         android:id="@+id/pokemonIcon"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="250dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,66 +30,89 @@
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#212A58"
         android:onClick="checkAnswer"
         android:text="@string/answer"
-        android:textColor="@color/black"
+        android:textColor="#E9E426"
         app:layout_constraintEnd_toStartOf="@+id/ansBtn2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:strokeColor="#E9E426"
+        app:strokeWidth="3dp" />
 
     <Button
         android:id="@+id/ansBtn2"
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#212A58"
         android:onClick="checkAnswer"
         android:text="@string/answer"
-        android:textColor="@color/black"
+        android:textColor="#E9E426"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ansBtn"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        app:strokeColor="#E9E426"
+        app:strokeWidth="3dp" />
 
     <Button
         android:id="@+id/ansBtn3"
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#212A58"
         android:onClick="checkAnswer"
         android:text="@string/answer"
-        android:textColor="@color/black"
+        android:textColor="#E9E426"
         app:layout_constraintEnd_toStartOf="@+id/ansBtn4"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ansBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/ansBtn"
+        app:strokeColor="#E9E426"
+        app:strokeWidth="3dp" />
 
     <Button
         android:id="@+id/ansBtn4"
         android:layout_width="130dp"
         android:layout_height="80dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/white"
+        android:backgroundTint="#212A58"
         android:onClick="checkAnswer"
         android:text="@string/answer"
-        android:textColor="@color/black"
+        android:textColor="#E9E426"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ansBtn3"
-        app:layout_constraintTop_toBottomOf="@+id/ansBtn2" />
+        app:layout_constraintTop_toBottomOf="@+id/ansBtn2"
+        app:strokeColor="#E9E426"
+        app:strokeWidth="3dp" />
 
     <TextView
         android:id="@+id/questionNum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="@string/questionNum"
-        android:textColor="@color/black"
+        android:textColor="#E9E426"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#E9E426"
+        app:strokeWidth="5dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_669995050366"
+        tools:src="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>
