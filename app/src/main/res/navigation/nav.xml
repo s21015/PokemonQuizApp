@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/titleScreen">
+
+    <fragment
+        android:id="@+id/titleScreen"
+        android:name="jp.ac.it_college.std.s21015.pokemonquizapp.TitleScreen"
+        android:label="@string/title_screen"
+        tools:layout="@layout/fragment_title_screen">
+        <action
+            android:id="@+id/action_titleScreen_to_generationScreen"
+            app:destination="@id/generationScreen" />
+        <argument android:name="generation" />
+    </fragment>
+    <fragment
+        android:id="@+id/generationScreen"
+        android:name="jp.ac.it_college.std.s21015.pokemonquizapp.GenerationScreen"
+        android:label="@string/generation_screen"
+        tools:layout="@layout/fragment_generation_screen" >
+        <action
+            android:id="@+id/action_generationScreen_to_quizScreen"
+            app:destination="@id/quizScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizScreen"
+        android:name="jp.ac.it_college.std.s21015.pokemonquizapp.QuizScreen"
+        android:label="fragment_quiz_screen"
+        tools:layout="@layout/fragment_quiz_screen" >
+        <argument
+            android:name="generationNum"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <argument
+            android:name="pokemonNum"
+            app:argType="integer"
+            android:defaultValue="0"/>
+        <action
+            android:id="@+id/action_quizScreen_to_resultScreen"
+            app:destination="@id/resultScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultScreen"
+        android:name="jp.ac.it_college.std.s21015.pokemonquizapp.ResultScreen"
+        android:label="fragment_result_screen"
+        tools:layout="@layout/fragment_result_screen" />
+</navigation>

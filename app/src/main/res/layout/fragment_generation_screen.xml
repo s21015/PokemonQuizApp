@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerationScreen">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/zenkokuBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/kantoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/zyoutoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/houenBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/sinouBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/issyuBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/sentratuBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/kosutoBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/mauntenBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/aroraBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/gararuBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/yoroiBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/kanmuriBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/hisuiBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/white"
+                android:text="Button"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
