@@ -1,9 +1,6 @@
 package jp.ac.it_college.std.s21015.pokemonquizapp
 
 import android.annotation.SuppressLint
-import android.content.Intent
-import android.graphics.Color
-import android.graphics.PorterDuff
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -13,18 +10,12 @@ import android.widget.Button
 import androidx.annotation.UiThread
 import androidx.annotation.WorkerThread
 import androidx.appcompat.app.AlertDialog
-import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.lifecycleScope
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import androidx.viewbinding.ViewBinding
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import com.squareup.picasso.Picasso
 import jp.ac.it_college.std.s21015.pokemonquizapp.databinding.FragmentQuizScreenBinding
-import jp.ac.it_college.std.s21015.pokemonquizapp.databinding.FragmentTitleScreenBinding
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -36,10 +27,9 @@ class QuizScreen : Fragment() {
     private val baseUrl = "https://pokeapi.co/"
     private val iconUrl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/%s.png"
 
-    private lateinit var binding: FragmentQuizScreenBinding
 
     private var _binding: FragmentQuizScreenBinding? = null
-//    private val binding get() = _binding!!
+    private val binding get() = _binding!!
     private val args: QuizScreenArgs by navArgs()
     private val moshi = Moshi.Builder().add(KotlinJsonAdapterFactory()).build()
 
@@ -92,8 +82,7 @@ class QuizScreen : Fragment() {
 
     private fun showNextQuiz() {
 
-//        val id = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].id
-        val id = pokemon[10].id
+        val id = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].id
         val name = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].name
         val name2 = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].name
         val name3 = pokemon[pokedex[args.generationNum].entries[Random().nextInt(args.pokemonNum)].pokemon_id-1].name
@@ -123,24 +112,23 @@ class QuizScreen : Fragment() {
 
 
         binding.ansBtn.setOnClickListener {
-            checkAnswer()
+            checkAnswer(binding.ansBtn)
         }
         binding.ansBtn2.setOnClickListener {
-            checkAnswer()
+            checkAnswer(binding.ansBtn2)
         }
         binding.ansBtn3.setOnClickListener {
-            checkAnswer()
+            checkAnswer(binding.ansBtn3)
         }
         binding.ansBtn4.setOnClickListener {
-            checkAnswer()
+            checkAnswer(binding.ansBtn4)
         }
 
     }
 
 
-    private fun checkAnswer() {
-         val answerBtn = binding.ansBtn
-         val btnText = answerBtn.text.toString()
+    private fun checkAnswer(button: Button) {
+        val btnText = button.text.toString()
 
         val alertTitle: String
         if (btnText == rightAnswer) {
